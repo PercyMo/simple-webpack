@@ -1,0 +1,20 @@
+{
+  "name": "simple-webpack",
+  "version": "1.0.0",
+  "description": "实现一个简单的webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./bundle.js",
+    "debugger": "node inspect ./bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "node inspect ./dist/main.js"
+  },
+  "author": "1418968663@qq.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/parser": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/traverse": "^7.10.4"
+  }
+}

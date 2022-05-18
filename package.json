@@ -7,8 +7,8 @@
   "main": "lib/webpack.js",
   "bin": "./bin/webpack.js",
   "scripts": {
-    "build": "node ./bundle.js",
-    "debugger": "node inspect ./bundle.js",
+    "build": "node ./lib/webpack.js",
+    "debugger": "node inspect ./lib/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "node inspect ./dist/main.js"
   },

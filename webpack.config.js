@@ -20,9 +20,19 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
   },
+  module: {
+    roules: [
+      {
+        test: /\.coffee$/,
+        use: [
+          path.join(__dirname, './loader/coffee-loader.js'),
+        ],
+      }
+    ],
+  },
   plugins: [
     new MyPlugin({
       name: '哈哈'
     })
-  ]
+  ],
 };
